@@ -1,0 +1,8 @@
+I have Adobe Premiere Pro running with my project and active sequence open, and the MCP extension window is active.
+
+Please:
+1. Ping the Premiere Pro MCP bridge and confirm the connection status.
+2. Inspect the active sequence and report back:
+   - Sequence name, resolution, and frame rate (FPS).
+   - Total duration and current playhead position.
+   - List of all video and audio tracks, including the number of clips on each track.

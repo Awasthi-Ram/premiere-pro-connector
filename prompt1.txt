@@ -1,0 +1,17 @@
+You are setting up an open-source MCP bridge between this Antigravity environment and Adobe Premiere Pro on my local machine.
+
+Please perform the following steps autonomously:
+1. Check if Node.js (>= 18) and npm are available in the system path.
+2. Install the open-source Premiere Pro MCP server:
+   `npm install -g premiere-pro-mcp`
+3. Install the local CEP extension and enable OS player debug mode so Premiere loads local unsigned extensions:
+   `premiere-pro-mcp --install-cep`
+4. Inspect and configure Antigravity's MCP configuration file (settings.json / mcp configuration) to add the server:
+   {
+     "mcpServers": {
+       "premiere-pro": {
+         "command": "premiere-pro-mcp"
+       }
+     }
+   }
+5. Run `premiere-pro-mcp --doctor` to verify all components and report back what steps I need to complete inside Premiere Pro.
